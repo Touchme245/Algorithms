@@ -31,7 +31,6 @@ void precalc() {
         inv_fact[i] = reverse(fact[i]);
     }
 }
-
 long long a(long long n, long long k){
     return (fact[n] * inv_fact[n-k]) % MOD;
 }
